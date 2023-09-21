@@ -1,12 +1,15 @@
-function change_bck(){
-    var a = document.querySelector(".in").value;
-    var b = document.querySelector("body");
-    b.style.backgroundColor=a;
+var a = document.querySelector('.target');
+a.innerHTML = 0;
+
+function inc(){
+    var a = document.querySelector('.target');
+    a.innerText = Number(a.innerText)+1;
 }
-
-
-function change_fnt(){
-    var c = document.querySelector(".fnt").value;
-    var d = document.querySelector("body");
-    d.style.color=c;
+function dec(){
+    var a = document.querySelector('.target');
+    a.innerText = Number(a.innerText)-1;
+}
+function res(){
+    var a = document.querySelector('.target');
+    a.innerText = 0;
 }
